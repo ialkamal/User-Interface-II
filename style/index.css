@@ -1,1 +1,142 @@
 /* Add CSS styling here */
+*{
+    font-size: 62.5%;
+    font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    background: white;
+    border-bottom: 3px solid darkgoldenrod;
+    margin-bottom: 2rem;
+}
+
+nav{
+    display: flex;
+    flex-direction: row wrap;
+    margin: 0 0 0 5rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav-item{
+    display: flex;
+    font-size: 1.6rem;
+    background: white;
+    text-decoration: none;
+    color:rgb(70, 66, 66);
+    margin: 2rem 0rem;
+    width: 10rem;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav-item:hover{
+    background: rgb(70, 66, 66);
+    color: white;
+}
+
+h1{
+    font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    color:  gray;
+    padding: 2rem 0 1rem 3rem;
+    margin: 0;
+}
+
+h2{
+    font-size: 2.5rem;
+    margin: 1rem 0 0 0;
+}
+
+h3{
+    font-size: 2rem;
+    margin: 2rem 0 00;
+}
+
+a, p{
+    font-size: 1.6rem;
+    width: 90%;
+    text-align: justify;
+    margin: 1rem 0 0 0;
+    text-decoration: none;
+    color:rgb(70, 66, 66);
+}
+
+a:hover{
+    color:green;
+    font-weight: bold;
+}
+
+.button{
+    display: flex;
+    font-size: 1.6rem;
+    background: white;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 1%;
+    color:rgb(70, 66, 66);
+    margin: 2rem 0rem;
+    width: 12rem;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover{
+    background: rgb(70, 66, 66);
+    color: white;
+}
+
+
+#hero{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: flex-start;  
+    height: auto; 
+}
+
+.hero-image{
+    width: 35rem;
+    height: 35rem;
+    margin: 0 10rem 0 0;
+
+}
+
+.intro-text{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    width: 50rem;
+}
+
+footer{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    border-top: 3px solid darkgoldenrod;
+}
+
+#portfolio{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 2rem 0;
+}
+
+.image-caption{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 1rem auto;
+}
+
+.image-caption p{
+    text-align: center;
+}
+
+.image-caption img{
+    margin: 0;
+    padding: 0;
+}
