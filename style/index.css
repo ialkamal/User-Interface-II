@@ -1,8 +1,11 @@
 /* Add CSS styling here */
 *{
-    font-size: 62.5%;
     font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
 }
 
 header{
@@ -17,7 +20,7 @@ nav{
     margin: 0 0 0 5rem;
     align-items: center;
     justify-content: flex-start;
-}
+} 
 
 .nav-item{
     display: flex;
@@ -26,7 +29,7 @@ nav{
     text-decoration: none;
     color:rgb(70, 66, 66);
     margin: 2rem 0rem;
-    width: 10rem;
+    width: 12rem;
     height: 4rem;
     align-items: center;
     justify-content: center;
@@ -51,6 +54,11 @@ h2{
     margin: 1rem 0 0 0;
 }
 
+.h2-other{
+    font-size: 2.5rem;
+    margin: 1rem auto 0 auto;    
+}
+
 h3{
     font-size: 2rem;
     margin: 2rem 0 00;
@@ -65,9 +73,24 @@ a, p{
     color:rgb(70, 66, 66);
 }
 
+.p-projects{
+    font-size: 1.6rem;
+    width: 50%;
+    text-align: justify;
+    margin: 1rem auto 0 auto;
+    text-decoration: none;
+    color:rgb(70, 66, 66);
+}
+
 a:hover{
     color:green;
     font-weight: bold;
+    animation: button-rotate .2s alternate 2;
+}
+
+@keyframes button-rotate{
+    from {transform: scale(1);}
+    to {transform: scale(1.25);}
 }
 
 .button{
@@ -95,32 +118,45 @@ a:hover{
     display: flex;
     flex-flow: row wrap;
     align-items: flex-end;
-    justify-content: flex-start;  
-    height: auto; 
+    justify-content: center;  
 }
 
-.hero-image{
-    width: 35rem;
-    height: 35rem;
-    margin: 0 10rem 0 0;
+#hero div{
+    width: 50%;
+} 
 
+.hero-image{
+    display: block;
+    width: 80%;
+    height: auto;
+    object-fit: contain;
 }
 
 .intro-text{
     display: flex;
     flex-flow: column wrap;
     align-items: flex-start;
-    width: 50rem;
+    width: 100%;
 }
+
+
+
 
 footer{
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    align-content: center;
+    justify-items: center;
+    width: auto;
     border-top: 3px solid darkgoldenrod;
 }
 
-#portfolio{
+footer div{
+    text-align: center;
+}
+
+.portfolio{
     display: flex;
     flex-flow: row wrap;
     margin: 2rem 0;
@@ -139,4 +175,73 @@ footer{
 .image-caption img{
     margin: 0;
     padding: 0;
+    object-fit: contain;
+    height: auto;
+}
+
+footer div a img:hover{
+    animation: rotate-img .2s linear;
+}
+
+@keyframes rotate-img{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(180deg);}
+}
+
+form{
+    display: inline-block;
+    flex: row nowrap;
+    align-items: space-evenly;
+    font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    background-color: white;
+    color: rgb(70, 66, 66);
+    width: 70%;
+    padding: 2rem 2rem 2rem 2rem;
+    margin: 2rem auto 1rem auto;
+    border-radius: 2rem;
+}
+
+label, input, textarea{
+    font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    background-color: white;
+    color: rgb(70, 66, 66);
+    width: 100%;
+    padding: 2rem 2rem 2rem 2rem;
+    margin: 2rem auto 2rem auto;
+    border-radius: 2rem;
+}
+
+.about{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.about p{
+    margin: 2rem auto;
+    width: 50%;
+}
+
+.about img{
+    width: 50%;
+    object-fit: contain;
+}
+
+.videoWrapper iframe{
+    margin: 2rem 0;
+    width: 50%;
+}
+
+
+ul{
+    font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    text-align: left;
+    width: 60%;
+    margin: 2rem auto;
+}
+
+li{
+    margin: 1rem auto;
 }
