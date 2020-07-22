@@ -298,7 +298,7 @@ li{
         width: 100%;
     }
 
-    .hero{
+    #hero{
         flex-direction: column;
     }
 
