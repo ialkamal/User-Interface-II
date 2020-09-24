@@ -1,3 +1,8 @@
+# Contributor: Ismail AlKamal
+# TL: LeRoyce Pearson
+# Netlify Site
+# https://nervous-khorana-9f1142.netlify.app/
+
 # Flexbox Module Challenge
 
 The module challenge is the afternoon project or assignment that students work through independently. This expands on the guided project completed earlier with the instructor.

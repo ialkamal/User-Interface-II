@@ -1,1 +1,375 @@
 /* Add CSS styling here */
+*{
+    font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header{
+    background: white;
+    border-bottom: 3px solid darkgoldenrod;
+    margin-bottom: 2rem;
+}
+
+nav{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 0 0 5rem;
+    align-items: center;
+    justify-content: flex-start;
+} 
+
+.nav-item{
+    display: flex;
+    font-size: 1.6rem;
+    background: white;
+    text-decoration: none;
+    color:rgb(70, 66, 66);
+    margin: 2rem 0rem;
+    width: 12rem;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav-item:hover{
+    background: rgb(70, 66, 66);
+    color: white;
+}
+
+h1{
+    font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    color:  gray;
+    padding: 2rem 0 1rem 3rem;
+    margin: 0;
+}
+
+h2{
+    font-size: 2.5rem;
+    margin: 1rem 0 0 0;
+}
+
+.h2-other{
+    font-size: 2.5rem;
+    margin: 1rem auto 0 auto;
+    text-align: center;    
+}
+
+h3{
+    font-size: 2rem;
+    margin: 2rem 0 0 0;
+    text-align: center;
+}
+
+a, p{
+    font-size: 1.6rem;
+    width: 90%;
+    text-align: justify;
+    margin: 1rem 0 0 0;
+    text-decoration: none;
+    color:rgb(70, 66, 66);
+}
+
+a:hover{
+    color:green;
+    font-weight: bold;
+    animation: button-rotate .2s alternate 2;
+}
+
+@keyframes button-rotate{
+    from {transform: scale(1);}
+    to {transform: scale(1.25);}
+}
+
+.button{
+    display: flex;
+    font-size: 1.6rem;
+    background: white;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 1%;
+    color:rgb(70, 66, 66);
+    margin: 2rem 0rem;
+    width: 12rem;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover{
+    background: rgb(70, 66, 66);
+    color: white;
+}
+
+
+#hero{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: center;  
+}
+
+#hero div{
+    width: 50%;
+} 
+
+.hero-image{
+    display: block;
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    max-width: 500px;
+}
+
+.intro-text{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    width: auto;
+    border-top: 3px solid darkgoldenrod;
+}
+
+footer div{
+    text-align: center;
+}
+
+.portfolio{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 2rem 0;
+}
+
+.image-caption{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 1rem auto;
+}
+
+.image-caption p{
+    text-align: center;
+}
+
+.image-caption img{
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
+    height: auto;
+}
+
+footer div a img:hover{
+    animation: rotate-img .2s linear;
+}
+
+@keyframes rotate-img{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(180deg);}
+}
+
+form{
+    display: inline-block;
+    font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    background-color: white;
+    color: rgb(70, 66, 66);
+    width: 800px;
+    padding: 2rem 2rem 2rem 2rem;
+    margin: 2rem auto 1rem auto;
+    border-radius: 2rem;
+}
+
+label, input, textarea{
+    font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    background-color: white;
+    color: rgb(70, 66, 66);
+    width: 100%;
+    padding: 2rem 2rem 2rem 2rem;
+    margin: 2rem auto 2rem auto;
+    border-radius: 2rem;
+}
+
+.about{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+
+.about p{
+    margin: 2rem auto;
+    width: 80%;
+}
+
+.about img{
+    width: 80%;
+    max-width: 1024px;
+    object-fit: contain;
+}
+
+.videoWrapper{
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden;
+    margin: 2rem auto; 
+    width: 100%;
+}
+
+.videoWrapper iframe{
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+
+}
+
+
+ul{
+    font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    text-align: left;
+    width: 60%;
+    margin: 2rem auto;
+}
+
+li{
+    margin: 1rem auto;
+}
+
+.projects{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 1rem auto;
+    width: 30rem;
+}
+
+.projects img{
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
+    height: auto;
+}
+
+.p-projects{
+    font-size: 1.6rem;
+    width: 100%;
+    text-align: center;
+    margin: 1rem auto 0 auto;
+    text-decoration: none;
+    color:rgb(70, 66, 66);
+}
+
+.contact p:first-of-type{
+    text-align: left;
+    margin: 0 0 0 2rem;
+    width: 100%;
+}
+
+#video-block{
+    width:70%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width:800px){
+    header{
+        text-align: center;
+    }
+
+    nav{
+        margin: 0;
+        justify-content: center;
+    }
+
+    #hero div{
+        width: 100%;
+    }
+
+    #hero{
+        flex-direction: column;
+    }
+
+    .hero-image{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .intro-text{
+        align-items: center;
+    }
+
+    a:hover{
+        animation: none;
+    }
+
+
+    footer div a img:hover{
+        animation: none;
+    }
+
+    .about img{
+        width: 90%;
+    }
+
+    #video-block{
+        width:90%;
+    }
+    
+    h2{
+        text-align: center;
+    }
+
+    .contact p:first-of-type{
+        text-align: center;
+        margin: 3rem 0 0 0;
+    }
+
+    form{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 80%;
+      }
+}
+
+
+@media only screen and (max-width:500px){
+    nav{
+        flex-direction: column;
+    }
+
+    .nav-item{
+        margin: 0;
+    }
+
+    h1{
+        padding: 0;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    .about img{
+        width: 100%;
+    }
+
+    #video-block{
+        width:100%;
+    }
+}
